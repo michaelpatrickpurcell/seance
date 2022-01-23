@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{fontspec}
+\usepackage{contour}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+
+\node[inner sep=0pt, minimum height=2cm, minimum width=4.5cm, fill=NavyBlue, draw, thick] (vecbox) at (0,0) {};
+\node[fill=black, inner sep = 1pt, circle] () at (-1.4,0.025) {};
+\node[fill=black, inner sep = 1pt, circle] () at (-0.975,0.025) {};
+\node[fill=black, inner sep = 1pt, circle] () at (1.2,0.025) {};
+\node[fill=black, inner sep = 1pt, circle] () at (0.675,0.025) {};
+\node[fill=black, inner sep = 1pt, circle] () at (0.1,0.025) {};
+
+\Huge
+\setmainfont{Rye}
+\node[inner sep=0pt] (title) at (0,0) {\contour{black}{\textcolor{Gray!0}{S\raisebox{0.5ex}{eanc}E}}};
+
+\setmainfont{FoglihtenDeH02}
+\node[inner sep = 0pt] (topdeco) at (0,0.6) {\contour{black}{\textcolor{Gray!0}{G|g}}};
+\node[inner sep = 0pt] (botdeco) at (0,-0.65) {\contour{black}{\textcolor{Gray!0}{H\textbackslash h}}};
+
+\end{tikzpicture}
+\end{document}
